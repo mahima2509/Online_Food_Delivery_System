@@ -1,0 +1,23 @@
+<div class="food-list">
+    <h2 class="list-title">Food List</h2>
+    <table class="food-table">
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Description</th>
+          <th>Price</th>
+          <th>Actions</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let food of foods">
+          <td>{{ food.name }}</td>
+          <td>{{ food.description }}</td>
+          <td>{{ food.price | currency }}</td>
+          <td>
+            <button *ngIf="food?.id !== undefined" class="btn-delete" (click)="deleteFood(food?.id!)">Delete</button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+</div>

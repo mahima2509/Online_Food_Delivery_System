@@ -1,0 +1,9 @@
+<div class="food-detail" *ngIf="food">
+    <h2 class="detail-title">Food Details</h2>
+    <div class="detail-content">
+        <p><strong>Name:</strong> <span class="detail-value">{{ food.name }}</span></p>
+        <p><strong>Description:</strong> <span class="detail-value">{{ food.description }}</span></p>
+        <p><strong>Price:</strong> <span class="detail-value">{{ food.price | currency }}</span></p>
+    </div>
+    <a routerLink="/foods" class="btn-back">Back to List</a>
+</div>

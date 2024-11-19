@@ -1,0 +1,16 @@
+<div class="dashboard-container">
+    <header class="navbar">
+      <h1 class="brand-title"><b>Welcome to QuickBites</b></h1>
+      <nav class="navbar-links">
+        <a routerLink="/foods" routerLinkActive="active">Food List</a>
+        <a routerLink="/foods/create" routerLinkActive="active">Add Food</a>
+        <a routerLink="/foods/update/1" routerLinkActive="active">Update Food</a> <!-- Change '1' to a dynamic ID -->
+        <a routerLink="/foods/detail/1" routerLinkActive="active">Food Details</a> <!-- Change '1' to a dynamic ID -->
+      </nav>
+    </header>
+  
+    <main class="content">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+  
